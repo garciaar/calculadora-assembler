@@ -462,7 +462,7 @@ ne1:
 
         ;Comprobacion del caracter ingresado, si es un decimal del 1 al 9
         ;Si al < 31 y al > 39 el caracter no es valido  
-        cmp al,'0'		    ;Comprueba '1' con AL, si es mayor
+        cmp al,'1'		    ;Comprueba '1' con AL, si es mayor
         jl  initial_state 	;Pide de nuevo un caracter
         cmp al,'9'		    ;Comprueba '9' con AL, si es menor
         jg  initial_state 	;Pide de nuevo un caracter
@@ -548,7 +548,7 @@ ne2:
 
         ;Comprobacion del caracter ingresado, si es un decimal del 1 al 9
         ;Si al < 31 y al > 39 el caracter no es valido  
-        cmp al,'0'		    ;Compara '1' con al, si es menor
+        cmp al,'1'		    ;Compara '1' con al, si es menor
         jl  negative_get    ;Pide de nuevo un caracter
         cmp al,'9'		    ;Compara '9' con AL, so es mayor
         jg  negative_get  	;Pide de nuevo un caracter
